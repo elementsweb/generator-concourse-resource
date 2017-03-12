@@ -1,0 +1,12 @@
+{
+  "name": "generator-concourse-resource",
+  "version": "0.1.0",
+  "description": "Yeoman generator to provide the scaffolding for a new Concourse CI resource",
+  "files": [
+    "generators"
+  ],
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  }
+}
