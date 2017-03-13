@@ -28,4 +28,15 @@ You'll now be able to use your local copy of the generator as follows:
 yo concourse-resource
 ```
 
-You can run unit tests with `npm t`.
+## Contributing changes
+Before submitting a pull request ensure you've covered a few prerequisites:
+- Run unit tests with `npm t`
+- Run test coverage with `npm run coverage`
+
+Once you're happy with your changes and they pass test and coverage, you can create a pull request.
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b feature/new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin feature/new-feature`
+5. Submit a pull request.

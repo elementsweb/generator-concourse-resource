@@ -8,6 +8,7 @@
   },
   "author": "elementsweb",
   "scripts": {
+    "coverage": "istanbul cover _mocha",
     "test": "mocha"
   },
   "files": [
@@ -22,6 +23,7 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "yeoman-test": "^1.6.0"
   }
