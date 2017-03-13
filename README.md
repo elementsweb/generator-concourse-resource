@@ -4,13 +4,10 @@
 Yeoman generator to provide the scaffolding for a new Concourse CI resource
 
 ## Installation
-While this Yeoman generator is still in development, you'll have to download it first to use with `yo`.
+Install generator-concourse-resource with npm:
 
 ```
-git clone https://github.com/elementsweb/generator-concourse-resource.git
-cd generator-concourse-resource
-npm i
-npm link
+npm i generator-concourse-resource
 ```
 
 ## Usage
@@ -29,12 +26,6 @@ Answer the questions asked by the generator, these answers will be injected into
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin feature/new-feature`
 5. Submit a pull request.
-
-## History
-
-|Version|Change description|
-|---|---|
-|`0.1.0`|Generator creates basic resource file structure|
 
 ## Credits
 

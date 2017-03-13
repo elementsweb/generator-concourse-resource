@@ -1,6 +1,6 @@
 {
   "name": "generator-concourse-resource",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yeoman generator to provide the scaffolding for a new Concourse CI resource",
   "repository": {
     "type": "git",
