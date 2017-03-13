@@ -1,7 +1,20 @@
 var Generator = require('yeoman-generator');
+var yosay = require('yosay');
 
 module.exports = class extends Generator {
+  constructor(args, opts) {
+    super(args, opts);
+
+    this.option('skip-welcome', {
+      desc: 'Skips the welcome message',
+      type: Boolean
+    });
+  }
   prompting() {
+    if (!this.options['skip-welcome']) {
+      this.log(yosay('Out of the box I setup the file structure to help you build your Concourse resource.'));
+    }
+
     return this.prompt([{
       type: 'input',
       name: 'name',

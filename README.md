@@ -19,6 +19,10 @@ yo concourse-resource
 
 Answer the questions asked by the generator, these answers will be injected into various files that will be created in your directory.
 
+### Options
+
+- `--skip-welcome-message` - Skips welcome greeting before displaying options.
+
 ## Contributing
 
 1. Fork it!
