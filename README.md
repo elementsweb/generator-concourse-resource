@@ -20,6 +20,8 @@ yo concourse-resource
 
 Answer the questions asked by the generator, these answers will be injected into various files that will be created in your directory.
 
+For guidance on how to write your `check`, `in` and `out` scripts, see [implementing resources](https://concourse.ci/implementing-resources.html) on the Concourse docs.
+
 ### Options
 
 - `--skip-welcome` - Skips welcome greeting before displaying options.
