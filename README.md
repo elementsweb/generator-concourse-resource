@@ -1,4 +1,5 @@
 # generator-concourse-resource
+[![Build Status](https://travis-ci.org/elementsweb/generator-concourse-resource.svg?branch=master)](https://travis-ci.org/elementsweb/generator-concourse-resource)
 Yeoman generator to provide the scaffolding for a new Concourse CI resource
 
 ## Installation
