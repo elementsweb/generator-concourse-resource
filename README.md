@@ -21,7 +21,7 @@ Answer the questions asked by the generator, these answers will be injected into
 
 ### Options
 
-- `--skip-welcome-message` - Skips welcome greeting before displaying options.
+- `--skip-welcome` - Skips welcome greeting before displaying options.
 
 ## Contributing
 
