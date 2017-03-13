@@ -32,7 +32,10 @@ Answer the questions asked by the generator, these answers will be injected into
 4. Push to the branch: `git push origin feature/new-feature`
 5. Submit a pull request.
 
+See CONTRIBUTING for more information.
+
 ## Credits
+Contributors to the project will be listed here unless otherwise specified.
 
 - elementsweb __(lead developer)__
 
