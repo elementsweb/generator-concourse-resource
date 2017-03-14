@@ -8,7 +8,8 @@ describe('concourse-resource:app', function() {
       .withPrompts({
         name: 'concourse-bitbucket-status',
         description: 'Concourse Bitbucket Status',
-        licensee_name: 'elementsweb'
+        licensee_name: 'elementsweb',
+        language: 'Python'
       })
       .on('end', done);
   });

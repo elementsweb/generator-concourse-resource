@@ -10,27 +10,31 @@ module.exports = class extends Generator {
       type: Boolean
     });
   }
+
   prompting() {
     if (!this.options['skip-welcome']) {
       this.log(yosay('Out of the box I setup the file structure to help you build your Concourse resource.'));
     }
 
     return this.prompt([{
-      type: 'input',
       name: 'name',
       message: 'Name your new Concourse resource'
     }, {
-      type: 'input',
       name: 'description',
       message: 'Describe your new Concourse resource'
     }, {
-      type: 'input',
       name: 'licensee_name',
       message: 'Name to associate the license with'
+    }, {
+      type: 'list',
+      name: 'language',
+      message: 'Choose a language to write in',
+      choices: ['Python', 'Shell']
     }]).then((answers) => {
       this.name = answers.name;
       this.description = answers.description;
       this.licensee_name = answers.licensee_name;
+      this.language = answers.language.toLowerCase();
     });
   }
 
@@ -50,7 +54,7 @@ module.exports = class extends Generator {
       this.destinationPath('LICENSE')
     );
     this.fs.copy(
-      this.templatePath('Dockerfile'),
+      this.templatePath(`Dockerfile-${this.language}`),
       this.destinationPath('Dockerfile')
     );
     this.fs.copy(
@@ -58,7 +62,7 @@ module.exports = class extends Generator {
       this.destinationPath('.dockerignore')
     );
     this.fs.copy(
-      this.templatePath('scripts/*'),
+      this.templatePath(`scripts/${this.language}/*`),
       this.destinationPath('scripts/')
     );
   }

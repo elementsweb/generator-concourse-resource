@@ -2,7 +2,9 @@
 [![Build Status](https://travis-ci.org/elementsweb/generator-concourse-resource.svg?branch=master)](https://travis-ci.org/elementsweb/generator-concourse-resource)
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/generator-concourse-resource)
 
-Yeoman generator to provide the scaffolding for a new Concourse CI resource
+Yeoman generator to provide the scaffolding for a new Concourse CI resource.
+
+Supports development of resources in Python or Shell languages.
 
 ## Installation
 Install generator-concourse-resource with npm:
